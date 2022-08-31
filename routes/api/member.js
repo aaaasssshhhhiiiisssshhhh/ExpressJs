@@ -51,7 +51,8 @@ router.post("/", (req, res) => {
     return res.status(400).json({ msg: `please enter email and id` });
   }
   member.push(newMember);
-  res.json(member);
+  // res.json(member);
+  res.redirect("/");
 });
 
 //upadte memeber
