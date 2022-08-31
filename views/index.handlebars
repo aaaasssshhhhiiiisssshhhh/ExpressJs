@@ -1,18 +1,18 @@
 <h1 class="text-center mb-3">{{title}}<h1>
 
-<from action="/api/member" method="POST" class="mb-4">
+<form action="/api/member" method="POST" class="mb-4">
     <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" name="name" class="form-control">  
+        <label for="name"> Name</label>
+        <input type="text" name="name" class="form-control">
     </div>
 
     <div class="form-group">
-        <label for="email">Email</label>
+        <label for="email"> Email</label>
         <input type="email" name="email" class="form-control">
     </div>
+    <input type="submit" value="add Member" class="btn btn-primary btn-block">
 
-    <input type="submit" value="add member" class="btn btn-primary btn-block">
-</from>
+</form>
 
 <h4>Members</h4>
 <ul class="list-group">
@@ -21,4 +21,4 @@
     {{/each}}
 </ul>
 
-<a href="/api/member.js" class="btn btn-light mt-4"> visit api</a>
+<a href="/api/member" class="btn btn-light mt-4">visit api</a>
